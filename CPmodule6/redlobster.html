@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Red Lobster</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" href="themes/themes.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+<div id="page" data-role="page" data-theme="b" data-add-back-btn="true">
+    <div id="headnav2" data-role="header" data-theme="b">
+        <ul id="nav2">
+        <div class="logo"><img src="images/lobster.png" width="218" height="75" alt=""/></div>
+            <li>Show Us How You Rock The Lobster</li>
+            <li><a href="index.html">McDonald's</a></li>
+            <li><a href="redlobster.html">Red Lobster</a></li>
+            <li><a href="starbucks.html">Starbucks</a></li>
+        </ul>
+    </div>
+
+    <div data-role="header" class="header2">
+        <h1>Welcome To Red Lobster</h1>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview" data-theme="b">
+            <li><a href="#section4">Check Out The Website</a></li>
+            <li><a href="#form">R.S.V.P.</a></li>
+
+        </ul>
+    </div>
+    <div data-role="footer" data-theme="b" id="footer2">
+        <h4>Red Lobster &copy; 2018</h4>
+    </div>
+</div>
+
+<div id="section4" data-role="page" data-theme="b" data-add-back-btn="true">
+    <div data-role="header" data-theme="b" data-add-back-btn="true">
+        <h1>The Latest Red Lobster Details</h1>
+        <ul data-role="listview" data-theme="b" data-filter="true">
+            <li data-icon="star"><a href="https://www.redlobster.com/menu">Menu </a></li>
+            <li data-icon="info"><a href="https://www.redlobster.com/menu/specials">Specials</a></li>
+            <li data-icon="user"><a href="https://www.redlobster.com/gift-cards">Gift Cards</a></li>
+            <li data-icon="action"><a href="https://www.redlobster.com/rewards">Rewards</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-theme="b" id="footer3">
+        <h4>Red Lobster &copy; 2018</h4>
+    </div>
+</div>
+
+<div data-role="page" id="form" data-theme="b" data-add-back-btn="true">
+    <div data-role="header" data-theme="b" data-add-back-btn="true">
+        <h1>R.S.V.P. Details</h1>
+    </div>
+    <div data-role="content">
+
+        <form action="form.php" method="post">
+            <label for="fname">First name:</label>
+            <input type="text" name="fname" id="fname" data-clear-btn="true">
+            <label for="lname">Last name:</label>
+            <input type="text" name="lname" id="lname" data-clear-btn="true">
+            <label for="pnum">Phone number:</label>
+            <input type="number" name="pnum" id="pnum" data-clear-btn="true">
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" data-clear-btn="true">
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time" data-clear-btn="true">
+            <input type="reset" value="Reset Button">
+            <input type="submit" value="Submit Button">
+        </form>
+
+        <div data-role="content">
+
+            <p>Check the local storage of your information.</p>
+
+            <textarea class="localstorage" placeholder="Information here will be stored." autofocus></textarea>
+
+            <button class="clear">Clear localStorage</button>
+
+            <button class="empty">Empty localStorage</button>
+
+        </div>
+
+    </div>
+
+    <div data-role="footer" data-theme="b" id="footer4">
+        <h4>Red Lobster &copy; 2018</h4>
+    </div>
+</div>
+
+<script>
+    (function() {
+
+    var rasm = document.querySelector('.localstorage');
+
+    function supportsLocalStorage() {
+
+        return typeof(Storage)!== 'undefined';
+
+    }
+
+    if (!supportsLocalStorage()) {
+
+        rasm.value = 'Your browser does not support localStorage.';
+
+    } else {
+
+        try {
+
+            setInterval(function() {
+
+                localStorage.setItem('autosave', rasm.value);
+
+            }, 1000);
+
+        } catch (e) {
+
+            if (e == QUOTA_EXCEEDED_ERR) {
+
+                alert('Quota exceeded!');
+
+            }
+
+        }
+
+        if (localStorage.getItem('autosave')) {
+
+            rasm.value = localStorage.getItem('autosave');
+
+        }
+
+        document.querySelector('.clear').onclick = function() {
+
+            rasm.value = '';
+
+            localStorage.removeItem('autosave');
+
+        };
+
+        document.querySelector('.empty').onclick = function() {
+
+            rasm.value = '';
+
+            localStorage.clear();
+
+        };
+
+    }
+
+})();
+
+</script>
+
+
+</body>
+</html>

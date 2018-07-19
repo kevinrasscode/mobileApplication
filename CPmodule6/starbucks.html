@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Red Lobster</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+
+    <link rel="stylesheet" href="themes/themes.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+<div class="main-nav" id="page" data-role="page" data-theme="c" data-add-back-btn="true">
+    <div data-role="panel" id="myPanel">
+        <h2 style="color:green; text-align: center;">Favorite Items</h2>
+        <ul data-role="content" data-theme="c">
+
+            <p>Enter your favorite items.</p>
+
+            <textarea class="localstorage" id="storage" placeholder="Information here will be stored." autofocus></textarea>
+
+            <button class="clear">Clear localStorage</button>
+
+            <button class="empty">Empty localStorage</button>
+        </ul>
+        <p>You can close this panel by clicking outside of it, pressing the Esc key, or by swiping.</p>
+    </div>
+
+    <div id="headnav3" data-role="header" data-theme="c">
+        <ul id="nav3">
+            <div class="logo"><img src="images/starbucks.jpg" width="218" height="75" alt=""/></div>
+            <li>A Shared Singular Passion</li>
+            <li><a href="index.html">McDonald's</a></li>
+            <li><a href="redlobster.html">Red Lobster</a></li>
+            <li><a href="starbucks.html">Starbucks</a></li>
+        </ul>
+    </div>
+
+    <div data-role="header" class="header3" data-theme="c">
+        <a href="#myPanel" class="ui-btn ui-btn-inline">Favorites</a>
+        <h1>Welcome To Starbucks</h1>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview" data-theme="c">
+            <li><a href="#section4">Check Out The Website</a></li>
+            <li><a href="#form">Sign Up For A Membership</a></li>
+            <li><a href="#grid">Gallery</a></li>
+            <li><a href="#favorites">Favorites List</a></li>
+
+        </ul>
+    </div>
+    <div data-role="footer" data-theme="c" id="footer5">
+        <h4>Starbucks &copy; 2018</h4>
+    </div>
+</div>
+
+<div id="section4" data-role="page" data-theme="c" data-add-back-btn="true">
+    <div data-role="header" data-theme="c" data-add-back-btn="true" id="headersec">
+        <h1>The Latest Starbucks Details</h1>
+        <ul data-role="listview" data-theme="c" data-filter="true">
+            <li data-icon="home"><a href="https://www.starbucks.com/">Home</a></li>
+            <li data-icon="info"><a href="https://www.starbucks.com/promo/our-coffees">Cofees</a></li>
+            <li data-icon="user"><a href="https://www.starbucks.com/promo/tea">Tea</a></li>
+            <li data-icon="action"><a href="https://www.starbucks.com/menu">Menu</a></li>
+            <li data-icon="star"><a href="https://www.starbucks.com/starbucks-rewards">Rewards</a></li>
+            <li data-icon="shop"><a href="https://www.starbucks.com/shop/card/egift">Gift Cards</a></li>
+
+        </ul>
+    </div>
+    <div data-role="footer" data-theme="c" id="footer6">
+        <h4>Starbucks &copy; 2018</h4>
+    </div>
+</div>
+
+<div data-role="page" id="form" data-theme="c" data-add-back-btn="true">
+    <div data-role="header" data-theme="c" data-add-back-btn="true">
+        <h1>Member Sign Up</h1>
+    </div>
+    <div data-role="content">
+
+        <form action="form.php" method="post">
+            <label for="fname">First name:</label>
+            <input type="text" name="fname" id="fname" data-clear-btn="true">
+            <label for="lname">Last name:</label>
+            <input type="text" name="lname" id="lname" data-clear-btn="true">
+            <label for="pnum">Phone number:</label>
+            <input type="number" name="pnum" id="pnum" data-clear-btn="true">
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" data-clear-btn="true">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" data-clear-btn="true">
+            <input type="reset" value="Reset Button">
+            <input type="submit" value="Submit Button">
+        </form>
+    </div>
+
+    <div data-role="footer" data-theme="c" id="footer7">
+        <h4>Starbucks &copy; 2018</h4>
+    </div>
+</div>
+
+<div data-role="page" id="grid" data-theme="c" data-add-back-btn="true">
+    <div data-role="header" data-theme="c" data-add-back-btn="true">
+        <h1>Starbucks Gallery</h1>
+    </div>
+    <div data-role="content" data-theme="c">
+        <div class="ui-grid-d">
+            <div class="ui-block-a"><div class="ui-bar ui-bar-c" style="height: 100%; width: 220px;"><img src="images/starbucks.jpg" width="100%" height="200px !important" alt=""/></div></div>
+            <div class="ui-block-b"><div class="ui-bar ui-bar-c" style="height: 100%; width: 220px;"><img src="images/starbucksgrey.jpg" width="100%" height="200px !important" alt=""/></div></div>
+            <div class="ui-block-c"><div class="ui-bar ui-bar-c" style="height: 100%; width: 220px;"><img src="images/starbucks-doll.jpg" width="100%" height="200px !important" alt=""/></div></div>
+            <div class="ui-block-d"><div class="ui-bar ui-bar-c" style="height: 100%; width: 220px;"><img src="images/christmas.jpg" width="100%" height="200px !important" alt=""/></div></div>
+            <div class="ui-block-e"><div class="ui-bar ui-bar-c" style="height: 100%; width: 220px;"><img src="images/womenatstarbucks.jpg" width="100%" height="200px !important" alt=""/></div></div>
+        </div>
+
+    </div>
+    <div data-role="footer" data-theme="c" id="footer8">
+        <h4>Starbucks &copy; 2018</h4>
+    </div>
+</div>
+
+<div data-role="page" id="favorites" data-theme="c" data-add-back-btn="true">
+    <div data-role="header" data-theme="c" data-add-back-btn="true">
+        <h1>Your favorites are listed here</h1>
+    </div>
+    <div data-role="content">
+
+        <p>Click the button below to display your list.</p>
+
+        <!-- Javascript button to capture and display the input -->
+        <button onclick="getInfo()">List Favorites</button>
+        <p id="data"></p>
+        </head>
+    </div>
+
+    <div data-role="footer" data-theme="c" id="footer9">
+        <h4>Starbucks &copy; 2018</h4>
+    </div>
+</div>
+
+
+<script>
+
+
+
+
+    (function() {
+
+        var rasm = document.querySelector('.localstorage');
+
+        function supportsLocalStorage() {
+
+            return typeof(Storage)!== 'undefined';
+
+
+
+        }
+
+        if (!supportsLocalStorage()) {
+
+            rasm.value = 'Your browser does not support localStorage.';
+
+        } else {
+
+            try {
+
+                setInterval(function() {
+
+                    localStorage.setItem('autosave', rasm.value);
+                    console.log("set item");
+
+
+
+
+
+                }, 1000);
+
+            } catch (e) {
+
+                if (e == QUOTA_EXCEEDED_ERR) {
+
+                    alert('Quota exceeded!');
+
+                }
+
+            }
+
+            if (localStorage.getItem('autosave')) {
+
+                rasm.value = localStorage.getItem('autosave');
+                console.log("get item");
+
+
+
+            }
+
+            document.querySelector('.clear').onclick = function() {
+
+                rasm.value = '';
+
+                localStorage.removeItem('autosave');
+
+            };
+
+            document.querySelector('.empty').onclick = function() {
+
+                rasm.value = '';
+
+                localStorage.clear();
+
+            };
+
+            console.log("the end");
+
+
+        }
+        console.log("the end end");
+
+    })
+    ();
+
+    function getInfo() {
+        var vue = document.getElementById("storage").value.replace(/\r?\n/g, '<br />');
+        document.getElementById("data").innerHTML = vue;
+
+    }
+
+</script>
+
+
+</body>
+</html>

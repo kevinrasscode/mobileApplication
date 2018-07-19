@@ -1,0 +1,461 @@
+/* Navigaton Menu */
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    background-color: red;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#nav2 {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#nav3 {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black !important;
+}
+
+.nav li {
+    padding: 30px 10px 10px 10px;
+}
+
+#nav2 li {
+    padding: 30px 10px 0 10px !important;
+}
+
+#nav3 li {
+    padding: 30px 10px 10px 10px;
+    color: white !important;
+
+}
+
+.nav a {
+    transition: all .5s;
+    color: white;
+}
+
+#nav2 a {
+    transition: all .5s;
+    color: white !important;
+}
+
+#nav3 a {
+    transition: all .5s;
+    color: white !important;
+    align-content: center !important;
+    margin-top: 30px !important;
+}
+
+
+.nav a:hover {
+    color: yellow;
+}
+
+#nav2 a:hover {
+    color: black !important;
+}
+
+#nav3 a:hover {
+    color: green !important;
+}
+
+.name {
+    color: yellow;
+}
+
+.name2 {
+    color: black;
+}
+
+.header3 {
+    color: white !important;
+}
+
+#filter2 {
+    background-color: white !important;
+
+}
+
+.ui-filterable {
+    background-color: white !important;
+}
+
+/* copy right footer */
+#copy {
+    background-color: red;
+    color: yellow;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ #footer2 {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer3 {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer4 {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer5 {
+    color: white; !important;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer6 {
+    color: white; !important;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer7 {
+    color: white; !important;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer8 {
+      color: white; !important;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+}
+
+#footer9 {
+    color: white; !important;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.localstorage {
+    height: 60px !important;
+}
+
+
+/* index header */
+#heading1 {
+    font-weight: 700;
+    text-align: right;
+    margin-right: 35% !important;
+}
+
+#heading2 {
+    font-weight: 700;
+    text-align: center;
+
+}
+
+/* index Introduction */
+ #introduction {
+    text-align: center;
+}
+
+#info {
+    float: left;
+    margin-left: 15%;
+    width: 30em;
+    font-family: verdana;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/* index images */
+#container {
+    overflow: hidden;
+    }
+
+#images-left {
+    float:left;
+    margin-top: 10%;
+}
+
+#buttonsMC {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* McDonald's buttons */
+#btn1{
+    height:50px !important;
+    width: 119px !important;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+
+#btn2{
+    height:50px !important;
+    width: 119px !important;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+
+#btn3{
+    height:50px !important;
+    width: 119px !important;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+
+#btn4{
+    height:50px !important;
+    width: 119px !important;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+
+#btn5{
+    height:50px !important;
+    width: 119px !important;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+
+#btn6{
+    height:50px !important;
+    width: 119px !important;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+#btn1:hover{
+    color: yellow;
+}
+
+#btn2:hover {
+    color:yellow;
+}
+
+#btn3:hover {
+    color:yellow;
+}
+
+#btn4:hover {
+    color:yellow;
+}
+
+#btn5:hover {
+    color:yellow;
+}
+
+#btn6:hover {
+    color:yellow;
+}
+
+#images-center img{
+    display:block !important;
+    margin-left: 46% !important;
+    border-radius: 50%;
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}
+
+#img2 {
+    margin-left: 27%;
+}
+
+#img2:hover {
+    transform: rotate(90deg);
+}
+
+#images-right img{
+    display: block;
+}
+
+#images-right {
+    float:right;
+}
+
+@media only screen and (max-width: 320px) {
+
+   body {
+       width: 320px;
+       line-height: 5px !important;
+   }
+
+    li {
+        line-height: 5px !important;
+    }
+
+    a{
+        display: block;
+    }
+
+    .nav {
+        width: 320px;
+    }
+
+    #heading1{
+       margin-top: 140px;
+       float:left;
+        line-height: 3em !important;
+
+   }
+
+    #introduction {
+        width: 9em;
+    }
+
+    #btn1 {
+        width: 70px !important;
+        height: 50px !important;
+
+    }
+
+    #btn2 {
+        width: 70px !important;
+        height: 50px !important;
+
+    }
+
+    #btn3 {
+        width: 70px !important;
+        height: 50px !important;
+
+    }
+
+    #btn4 {
+        width: 70px !important;
+        height: 50px !important;
+
+    }
+
+    #btn5 {
+        width: 70px !important;
+        height: 50px !important;
+
+    }
+
+    #btn6 {
+        width: 70px !important;
+        height: 50px !important;
+
+    }
+
+    .nav li {
+        line-height: 5px !important;
+        padding: 5px 1px 1px 1px !important;
+        text-align: center !important;
+    }
+
+    #img6 {
+        width: 50px !important;
+        height: 70px !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .nav li {
+        padding: 5px 5px 5px 5px;
+    }
+    #images-left {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    #img1  {
+        width: 100px !important;
+        height: 100px !important;
+
+    }
+
+    #img2  {
+        width: 100px !important;
+        height: 100px !important;
+
+    }
+
+    #img3  {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    #img4  {
+        width: 100px !important;
+        height: 100px !important;
+
+    }
+
+    #img5  {
+        width: 100px !important;
+        height: 100px !important;
+
+    }
+
+    #info {
+        width: 5em;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    h1  {
+        font-size: 1em;
+
+    }
+
+    p {
+        font-size: 1em;
+        width: 10em;
+        line-height: 20px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .ui-btn.ui-shadow.ui-corner-all {
+        width: 100px !important;
+        height: 100px !important;
+
+    }
+}
