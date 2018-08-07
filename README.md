@@ -22,3 +22,5 @@ Gallery contains a simple yet theme colored gallery with 5 images, and it also h
 ## Conclusion
 That is all there is to this restaurant reference application. I hope it was as much as an enjoyment for you to read through this documentation, as it was for me to create this application. 
 
+Follow this link if you would like to view this website in production: http://sotd.us/kevinamaya/project/module06/
+
